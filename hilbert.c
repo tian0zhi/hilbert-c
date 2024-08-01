@@ -23,13 +23,13 @@ int main()
     hilbert_r2r(N, x, hil_out_r);
 
     printf("===================\n");
-    printf("Complex output:\n\n");
+    printf("Complex output:\n\n");//分别输出复数的实部与虚部
     for(int i = 0; i < N; i++)
     {
         printf("%lf, %lf\n", hil_out_c[i][0], hil_out_c[i][1]);
     }
     printf("===================\n");
-    printf("Real output:\n\n");
+    printf("Abs output:\n\n");//不是实部而是计算其模长（绝对值）
     for(int i = 0; i < N; i++)
     {
         printf("%lf\n", hil_out_r[i]);
